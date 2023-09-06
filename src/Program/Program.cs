@@ -6,7 +6,11 @@ namespace PII_Game_Of_Life
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Board board1 = LeerArchivo.TableroNuevo();
+            while (true)
+            {
+                board1 = ImprimirTablero.ImpTablero(board1);
+            }
         }
     }
 }
